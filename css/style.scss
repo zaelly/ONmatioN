@@ -1,0 +1,25 @@
+:root{
+    --border-radius:12px
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ html,
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 100vh;
+    overflow-x: hidden;
+    
+    background-color: #ffffff;
+ }
+
+ .nav{
+    width: 500px;
+    height: 87;
+    color: #4F0101;
+ }
