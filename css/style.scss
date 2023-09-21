@@ -6,20 +6,113 @@
     margin: 0;
     box-sizing: border-box;
 }
- html,
- body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+ body{
+    font-family:inter;
     max-width: 100vh;
-    overflow-x: hidden;
-    
     background-color: #ffffff;
  }
 
- .nav{
-    width: 500px;
-    height: 87;
-    color: #4F0101;
+ header{
+    width: 100%;
+    height: 2.8rem;
+    flex-shrink: 0;
+    background-color: rgba(79, 1, 1, 1) ;
+    text-align: center;
+    line-height: 0;
+    position: fixed;
+    top: 0;
+    padding: 7px 0;
+}
+ul{
+    display: inline-block;
+}
+.container{
+    position: relative;
+    display:flex;
+    align-content: flex-start;
+    gap: 100px;
+    height: 30px;
+}
+nav {
+    position: absolute;
+    top:10px;
+    right: 0;
+}
+li {
+    display: inline-block;
+    margin: 0 0 0 15px;    
+    text-decoration: none;
+}
+ul{
+    padding: 5px;
+    list-style-type: none;
+}
+ .logo{
+    margin-left: 30px;
+    padding: 7px 0;
+    display: flex;
+    font-size: 30px; 
+    align-items: center;
+    font-family: jolly lodger;
+    align-content:flex-start;
  }
+.logo img{
+    margin-right: 7px;    
+    width: 35px;
+    height: 35px;
+    box-shadow: #ffffff;
+ }
+.font-header{
+        flex-shrink: 0;
+        color: #ffffff;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 60;
+        line-height: normal;
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        align-items: center;
+}
+.search{
+    justify-content: end;
+    margin-top: 2px;
+    display: block;
+    padding: 11px;
+    align-items: center;
+    text-align: center;
+    width: 15rem;
+    height: 1.1rem;
+    border-radius: 5rem;
+    background: rgba(255, 255, 255, 0.30);
+}
+.btn-search{
+    border: none;
+    background-color: transparent;
+}
+.seta{
+    padding-top: 1px;
+    width: 15px;
+    height:15px;
+    flex-shrink: 0;
+    border: none;
+    background-color: transparent;
+    filter: invert(100%);
+}
+.mode-icon{
+    height: 35px;
+    filter: invert(100%);
+    flex-shrink: 0;
+    border: none;
+    display: block;
+    background-color: transparent;
+}
+.cont{
+align-items:center;
+    justify-content: space-between;
+}
