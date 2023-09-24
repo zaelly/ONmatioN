@@ -11,9 +11,11 @@
 }
 
 body {
+  display: flex;
   font-family: inter;
   max-width: 100vh;
   background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
 }
 
 header {
@@ -48,7 +50,7 @@ li {
   text-decoration: none;
 }
 
-nav li a {
+a {
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
@@ -121,15 +123,8 @@ ul {
   margin-top: 3px;
 }
 
-.mode-icon {
-  height: 40px;
-  filter: invert(100%);
-  display: inline-block;
-  color: #ffffff;
-}
-
 .font-button-mode {
-  justify-content: end;
+  padding: 2px;
   margin-top: -3px;
   display: block;
   color: #ffffff;
@@ -139,11 +134,38 @@ ul {
   font-weight: 60;
   line-height: normal;
   text-decoration: none;
-  background-color: transparent;
   border: none;
   text-transform: uppercase;
 }
 
 .MenuRegular241 {
   filter: invert(100%);
+}
+
+.button-mode {
+  position: relative;
+  width: 45px;
+  height: 20px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #000000;
+  transition: left 1s;
+}
+
+.ball-move {
+  left: calc(100% - 20px);
+}
+
+.dark {
+  background-color: #404040;
 }/*# sourceMappingURL=style.css.map */

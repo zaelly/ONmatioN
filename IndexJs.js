@@ -9,3 +9,8 @@ document.getElementById("hamburguer-icon").onclick = function(){
 let dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
   return new bootstrap.Dropdown(dropdownToggleEl)
 })
+
+document.getElementById("button-mode").addEventListener("click", function(){
+  document.querySelector("body").setAttribute("class","dark");
+});
+
