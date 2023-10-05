@@ -76,7 +76,7 @@
     font-family:inter;
     max-width: 100vh;
     background-color: #ffffff;
-    transition: all 0.25s ease-in-out;
+    transition: background 1s;
  }
 
  header{
@@ -91,15 +91,17 @@ ul{
     display: inline-block;
 }
 .container{
-    position: relative;
+    position: absolute;
     display:flex;
     align-content: flex-start;
-    gap: 0px 170px;
+    gap:200px;
+    width: 100%;
 }
 nav {
     position: absolute;
     top:10px;
     right: 0;
+    padding: 0 34px;
 }
 li {
     display: inline-block;
@@ -116,8 +118,7 @@ ul{
     padding: 3px;
 }
  .logo{
-    margin-left: 30px;
-    padding: 7px 0;
+    margin: 0px 5px;
     display: flex;
     font-size: 30px; 
     align-items: center;
@@ -126,11 +127,15 @@ ul{
     height: 30px;
  }
 .logo img{
-    margin-right: 7px;    
+    padding: 0;
     width: 35px;
     height: 35px;
+    filter: invert(100%);
     box-shadow: #ffffff;
  }
+ .logo-text{
+  display: block;
+}
 .font-header{
     flex-shrink: 0;
     color: #ffffff;
@@ -146,7 +151,6 @@ ul{
     text-transform: uppercase;
 }
 .search{
-    justify-content: end;
     margin-top: 4px;
     display: block;
     padding: 11px;
@@ -189,7 +193,8 @@ ul{
 .MenuRegular241{
     filter: invert(100%);
 }
-.button-mode{
+.button{
+  margin: 0;
   position: relative;
   width: 45px;
   height: 20px;
@@ -203,13 +208,75 @@ ul{
   left: 0;
   width: 20px;
   height: 20px;
+  border: 1px solid rgb(207, 97, 0) ;
   border-radius: 50px;
-  background-color: #000000;
+  background-color: rgba(79, 1, 1, 1) ;
   transition: left 1s;
+  outline:none;
 }
 .ball-move{
   left: calc(100% - 20px);
 }
 .dark{
-  background-color: #404040;
+  background-color: #292929;
+}
+
+/* Estilos para telas pequenas (mobile) */
+@media (max-width: 768px) {
+  .header{
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    position: absolute;
+    display:flex;
+    gap: 75px;
+    width: 100%;
+    padding:0;
+    align-content: flex-start;
+  }
+  .logo-text{
+    display: none;
+  }
+  .logo{
+      width: 100%;
+      text-align: center;
+      margin-left: 20px;
+  }
+  .a, .li, .ul{
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  .button{
+    margin-right: 50px;
+  }
+
+}
+
+/* Estilos para telas médias (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+      font-size: 24px; /* Ajuste o tamanho conforme necessário */
+  }
+}
+.dropdown{
+  display: none;
+}
+.dropdown-menu {
+  flex-wrap: wrap;
+  z-index: 1000;
+  position: absolute;
+  justify-content: space-between;
+  width: 150%;
+}
+.nav-item:hover .dropdown-menu{
+  display: block;
+}
+.dropdown-menu li {
+  width: 30%; /* Isso dividirá em três colunas aproximadamente iguais */
+  text-align: center; /* Centralizará o texto em cada item da lista */
 }

@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="IndexJs.js"></script>
     <title>ONmatioN</title>
 </head>
 <body>
-    <header>
-        <div class="container ">
+    <header>            
+        <div class="container">
             <div class="logo"><img src="/src/invader-solid.png" alt="logo">
-                <a class="navbar-brand" href="Index.html" style="color: rgb(255, 255, 255); text-decoration: none;">ONmatioN</a>
+                <a class="logo-text" href="Index.html">ONmatioN</a>
             </div>
-            <div>
+            <div class="dropdown-alphabet">
                 <ul>
-                    <li class="dropdown font-header">
-                        <a href="">A-Z</a> <span><img src="/src/seta-down.png" class="seta"></span>
-                      <!-- <div class="dropdown-menu" >
+                    <a class="dropdown-toggle font-header" data-toggle="dropdown">a-z</a>
+                    <!-- <li class="nav-item dropdown">
+                        <div class="dropdown-menu">
                             <li><a href="Lista-A">A</a></li>
                             <li><a href="Lista-B">B</a></li>
                             <li><a href="Lista-C">C</a></li>
@@ -47,50 +49,41 @@
                             <li><a href="Lista-X">X</a></li>
                             <li><a href="Lista-Y">Y</a></li>
                             <li><a href="Lista-Z">Z</a></li>
-                      </div> -->
-                    </li>
+                            </div>
+                        </li>                               -->
                 </ul>
             </div>
-                <div> 
+                <div class="dropdown-gender"> 
                     <ul>   
-                    <li class="nav-item dropdown font-header">
-                            <a>gênero</a>
-                            <span><img src="/src/seta-down.png" class="seta"></span>
-                        <!-- <ul class="dropdown-menu">
-                                <li><a   href="Lista-A">Ação</a></li>
-                                <li><a   href="Lista-A">Aventura</a></li>
-                                <li><a   href="Lista-A">Comédia</a></li>
-                                <li><a   href="Lista-A">Drama</a></li>
-                                <li><a   href="Lista-A">Mistério</a></li>
-                                <li><a   href="Lista-A">Romance</a></li>
-                                <li><a   href="Lista-A">Sci-Fi</a></li>
-                                <li><a   href="Lista-A">Terror</a></li>
-                                <li><a   href="Lista-A">Shounen</a></li>
-                                <li><a   href="Lista-A">Shojou</a></li>
-                            </ul> -->
-                        </li>
+                        <a href="#" class="dropdown-toggle font-header" data-toggle="dropdown">gênero</a>
+                        <img src="/src/seta-down.png" class="seta">
+                    <!-- <ul class="dropdown-menu">
+                            <li><a   href="Lista-A">Ação</a></li>
+                            <li><a   href="Lista-A">Aventura</a></li>
+                            <li><a   href="Lista-A">Comédia</a></li>
+                            <li><a   href="Lista-A">Drama</a></li>
+                            <li><a   href="Lista-A">Mistério</a></li>
+                            <li><a   href="Lista-A">Romance</a></li>
+                            <li><a   href="Lista-A">Sci-Fi</a></li>
+                            <li><a   href="Lista-A">Terror</a></li>
+                            <li><a   href="Lista-A">Shounen</a></li>
+                            <li><a   href="Lista-A">Shojou</a></li>
+                        </ul> -->
                     </ul>
-                       
-                    </div>
+                 </div>
                         <form>
                         <input class="search" type="search" placeholder="buscar" aria-label="Search">
                         <button class="btn-search search-icon" type="submit"></button>
                     </form> 
-                    <div class="nav-item">
+                    <div class="button-light">
                         <p class="font-button-mode">modo claro</p>
-                        <div id="button" class="button-mode">
+                        <div id="button-mode" class="button">
                                 <div class="ball"></div>
-                        </div>
-                    </div>
-                    <div id="hamburguer-icon" class="hamburguer-icon">
-                        <div class="table">
-                            <div class="table-cell">
-                                <img class="MenuRegular241" style="width: 35px; height: 26px" src="/src/menu-regular.png" />
-                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </header>
     <main>
 
