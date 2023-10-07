@@ -28,6 +28,10 @@ header {
   padding: 7px 0;
 }
 
+div {
+  display: block;
+}
+
 ul {
   display: inline-block;
 }
@@ -61,11 +65,10 @@ a {
 
 ul {
   list-style-type: none;
-  padding: 3px;
 }
 
 .logo {
-  margin: 0px 5px;
+  margin: 0px 45px;
   display: flex;
   font-size: 30px;
   align-items: center;
@@ -122,7 +125,6 @@ ul {
 .seta {
   width: 13px;
   height: 13px;
-  flex-shrink: 0;
   border: none;
   background-color: transparent;
   filter: invert(100%);
@@ -132,7 +134,6 @@ ul {
 .font-button-mode {
   padding: 2px;
   margin-top: -3px;
-  display: block;
   color: #ffffff;
   font-family: Inter;
   font-size: 10px;
@@ -142,10 +143,6 @@ ul {
   text-decoration: none;
   border: none;
   text-transform: uppercase;
-}
-
-.MenuRegular241 {
-  filter: invert(100%);
 }
 
 .button {
@@ -176,7 +173,103 @@ ul {
 }
 
 .dark {
-  background-color: #292929;
+  background-color: #181818;
+}
+
+.traco-title-all {
+  width: 15rem;
+  padding: 0;
+  height: 3px;
+  background-color: #000000;
+  margin: 0 0 20px 15px;
+}
+
+.fonts-title-all {
+  color: #000000;
+  font-family: Inter;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0 0 0px 15px;
+}
+
+.box-title {
+  margin: 155px 0 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.itens-box2 {
+  display: block;
+  justify-content: space-around;
+  margin: 0px 15px;
+  width: 200px;
+  height: 145px;
+  background-color: rgb(217, 217, 217);
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px solid #000000;
+}
+
+.episodios-recentes {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px 10px;
+}
+
+h4 {
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container-episodios {
+  width: 100%;
+  max-width: 80rem;
+  margin: 85px 50px;
+  position: relative;
+}
+
+.titulo-destaques {
+  margin-top: 285px;
+  margin: 285px 0 0 30px;
+}
+
+.itens-box {
+  display: block;
+  margin: 0 15px;
+  width: 115px;
+  height: 145px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 5px;
+  box-shadow: 1px solid #000000;
+  justify-content: center;
+}
+
+.highlights {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  background-color: rgb(79, 1, 1);
+  position: absolute;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  bottom: 0;
+  padding: 7px 0;
+}
+
+.titulo-maisVistos {
+  position: absolute;
+  top: 80px;
+  right: 200px;
 }
 
 /* Estilos para telas pequenas (mobile) */
@@ -188,7 +281,7 @@ ul {
   .container {
     position: absolute;
     display: flex;
-    gap: 75px;
+    gap: 70px;
     width: 100%;
     padding: 0;
     align-content: flex-start;
@@ -217,24 +310,4 @@ ul {
   .logo {
     font-size: 24px; /* Ajuste o tamanho conforme necessário */
   }
-}
-.dropdown {
-  display: none;
-}
-
-.dropdown-menu {
-  flex-wrap: wrap;
-  z-index: 1000;
-  position: absolute;
-  justify-content: space-between;
-  width: 150%;
-}
-
-.nav-item:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu li {
-  width: 30%; /* Isso dividirá em três colunas aproximadamente iguais */
-  text-align: center; /* Centralizará o texto em cada item da lista */
 }/*# sourceMappingURL=style.css.map */
