@@ -61,6 +61,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
+  padding: 0;
 }
 
 ul {
@@ -75,6 +76,7 @@ ul {
   font-family: jolly lodger;
   align-content: flex-start;
   height: 30px;
+  text-decoration: none;
 }
 
 .logo img {
@@ -87,6 +89,8 @@ ul {
 
 .logo-text {
   display: block;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .font-header {
@@ -105,7 +109,7 @@ ul {
 }
 
 .search {
-  margin-top: 4px;
+  margin-top: 2px;
   display: block;
   padding: 11px;
   align-items: center;
@@ -122,18 +126,9 @@ ul {
   background-color: transparent;
 }
 
-.seta {
-  width: 13px;
-  height: 13px;
-  border: none;
-  background-color: transparent;
-  filter: invert(100%);
-  margin-top: 3px;
-}
-
 .font-button-mode {
-  padding: 2px;
-  margin-top: -3px;
+  display: inline-block;
+  padding: 0px;
   color: #ffffff;
   font-family: Inter;
   font-size: 10px;
@@ -146,8 +141,10 @@ ul {
 }
 
 .button {
-  margin: 0;
-  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 3px 0 0px 5px;
+  position: fixed;
   width: 45px;
   height: 20px;
   border-radius: 25px;
@@ -176,39 +173,44 @@ ul {
   background-color: #181818;
 }
 
-.traco-title-all {
+.traco-title-eps {
   width: 15rem;
   padding: 0;
   height: 3px;
   background-color: #000000;
-  margin: 0 0 20px 15px;
+  margin: 0 0 25px 15px;
 }
 
-.fonts-title-all {
+.fonts-title-eps {
   color: #000000;
   font-family: Inter;
   text-transform: uppercase;
   font-size: 14px;
   font-style: normal;
-  margin: 0 0 0px 15px;
+  margin: 0 15px;
 }
 
 .box-title {
-  margin: 155px 0 0 0;
+  margin: 10px 0 0px;
   font-size: 14px;
   text-align: center;
+}
+
+.container-box {
+  margin: 0 0 0 0px;
+  padding: 0;
 }
 
 .itens-box2 {
   display: block;
   justify-content: space-around;
   margin: 0px 15px;
-  width: 200px;
-  height: 145px;
+  width: 145px;
+  height: 85px;
   background-color: rgb(217, 217, 217);
   align-items: center;
   border-radius: 10px;
-  box-shadow: 2px solid #000000;
+  box-shadow: 1px 1px 3px #000000;
 }
 
 .episodios-recentes {
@@ -218,8 +220,8 @@ ul {
   position: relative;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  gap: 70px 10px;
+  justify-content: flex-start;
+  gap: 30px 10px;
 }
 
 h4 {
@@ -227,13 +229,34 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
 
 .container-episodios {
   width: 100%;
-  max-width: 80rem;
-  margin: 85px 50px;
+  max-width: 70rem;
+  margin: 75px 45px;
+  padding: 0;
   position: relative;
+}
+
+.traco-title-lancaments {
+  width: 15rem;
+  padding: 0;
+  height: 3px;
+  background-color: #000000;
+  margin: 0px 0 25px 15px;
+}
+
+.fonts-title-lancaments {
+  color: #000000;
+  font-family: Inter;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0 0 0 15px;
 }
 
 .titulo-destaques {
@@ -242,28 +265,40 @@ h4 {
 }
 
 .itens-box {
+  transition: transform 0.2s;
   display: block;
-  margin: 0 15px;
-  width: 115px;
-  height: 145px;
+  margin: 0 12px;
+  min-width: 100px;
+  min-height: 130px;
   background-color: rgb(217, 217, 217);
   border-radius: 5px;
-  box-shadow: 1px solid #000000;
+  box-shadow: 1px 1px 3px #000000;
   justify-content: center;
+  flex: 0 0 auto;
 }
 
 .highlights {
+  cursor: grab;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow-x: auto;
   width: 100%;
   height: 10rem;
   display: flex;
   background-color: rgb(79, 1, 1);
   position: absolute;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   bottom: 0;
   padding: 7px 0;
+}
+
+.highlights.active {
+  cursor: grabbing;
+}
+
+.highlights::-webkit-scrollbar {
+  display: none;
 }
 
 .titulo-maisVistos {
@@ -310,4 +345,8 @@ h4 {
   .logo {
     font-size: 24px; /* Ajuste o tamanho conforme necessário */
   }
+}
+#arrastavel {
+  position: absolute;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
