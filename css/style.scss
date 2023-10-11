@@ -394,10 +394,21 @@ h4{
 }
 
 /* Estilos para telas médias (tablets) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .logo {
-      font-size: 24px; /* Ajuste o tamanho conforme necessário */
+@media (min-width: 769px) and (max-width: 2000px) {
+  .itens-box {
+    min-width: 86px;
+    min-height: 130px;
   }
+  .container{
+    gap:9rem;
+}
+.episodios-recentes {
+  width: 120%;
+}
+.titulo-destaques{
+  margin-top: 285px;
+  margin:155px 0 0 30px;
+}
 }
 #arrastavel {
   position: absolute;
