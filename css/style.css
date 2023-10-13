@@ -173,6 +173,17 @@ ul {
   background-color: #181818;
 }
 
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maisVistos, .container-episodios {
+  width: 50%;
+}
+
 .traco-title-eps {
   width: 15rem;
   padding: 0;
@@ -205,7 +216,7 @@ ul {
   display: block;
   justify-content: space-around;
   margin: 0px 15px;
-  width: 145px;
+  width: 150px;
   height: 85px;
   background-color: rgb(217, 217, 217);
   align-items: center;
@@ -214,7 +225,7 @@ ul {
 }
 
 .episodios-recentes {
-  width: 100%;
+  width: 120%;
   height: 10rem;
   display: flex;
   position: relative;
@@ -260,8 +271,7 @@ h4 {
 }
 
 .titulo-destaques {
-  margin-top: 285px;
-  margin: 285px 0 0 30px;
+  margin: 210px 0 0 45px;
 }
 
 .itens-box {
@@ -301,10 +311,54 @@ h4 {
   display: none;
 }
 
+.maisVistos {
+  width: 150%;
+  height: 10rem;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  top: 5px;
+  padding: 7px 0px;
+  gap: 35px 10px;
+  max-width: 25rem;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+
+.itens-box3 {
+  display: block;
+  margin: 10px 10px;
+  width: 115px;
+  height: 145px;
+  background-color: rgb(82, 82, 82);
+  border-radius: 5px;
+  box-shadow: 1px solid #000000;
+  justify-content: center;
+}
+
 .titulo-maisVistos {
   position: absolute;
   top: 80px;
   right: 200px;
+}
+
+.traco-title-maisVistos {
+  width: 15rem;
+  padding: 0;
+  height: 3px;
+  background-color: #000000;
+  margin: 0px 0 25px 15px;
+}
+
+.fonts-title-maisVistos {
+  color: #000000;
+  font-family: Inter;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  margin: 0 0 0 15px;
 }
 
 /* Estilos para telas pequenas (mobile) */
@@ -341,7 +395,7 @@ h4 {
   }
 }
 /* Estilos para telas médias (tablets) */
-@media (min-width: 769px) and (max-width: 2000px) {
+@media (min-width: 769px) and (max-width: 1550px) {
   .itens-box {
     min-width: 86px;
     min-height: 130px;
@@ -350,11 +404,10 @@ h4 {
     gap: 9rem;
   }
   .episodios-recentes {
-    width: 120%;
+    width: 140%;
   }
   .titulo-destaques {
-    margin-top: 285px;
-    margin: 155px 0 0 30px;
+    margin: 80px 0 0 45px;
   }
 }
 #arrastavel {
