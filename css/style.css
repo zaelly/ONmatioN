@@ -311,23 +311,24 @@ h4 {
   display: none;
 }
 
-.maisVistos {
-  width: 150%;
+.conteiner-maisVistos {
+  width: 100%;
   height: 10rem;
   display: flex;
-  position: relative;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   top: 5px;
   padding: 7px 0px;
   gap: 35px 10px;
   max-width: 25rem;
   flex-wrap: wrap;
+  flex-direction: row;
   margin-right: auto;
 }
 
 .itens-box3 {
   display: block;
+  position: relative;
   margin: 10px 10px;
   width: 115px;
   height: 145px;
