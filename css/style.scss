@@ -232,7 +232,7 @@ ul{
 }
 // seçao ultimos eps
 .traco-title-eps{
-  margin: 0 0 25px 15px;
+  margin: 0 0 20px 0px;
 }
 .fonts-title-eps{
   color: #000000;
@@ -240,7 +240,7 @@ ul{
   text-transform: uppercase;
   font-size: 14px;  
   font-style: normal;
-  margin: 0 15px;
+  margin: 0;
 }
 .box-title {
   margin: 10px 0 0px;
@@ -255,7 +255,7 @@ ul{
 .itens-box2{
   display: block;
   justify-content:space-around;
-  margin: 0px 15px;
+  margin: 0px 20px 15px 0px;
   width: 160px;
   height: 100px;
   background-color: rgba(217, 217, 217, 1);
@@ -264,7 +264,7 @@ ul{
   box-shadow: 1px 1px 3px #000000;  
 }
 .episodios-recentes {
-  width: 130%;
+  width:calc(70% - 10px);
   height: 10rem;
   display: flex;
   position:relative;
@@ -284,15 +284,13 @@ h4{
 .container-episodios {
   width: 100%;
   max-width: 70rem; 
-  margin: 80px 60px;
+  margin: 30px 40px;
   padding: 0;
   position: relative;
-  order: 1;
+  order: 12;
 }
 // seção ultimos lançamentos
-.traco-title-lancaments{
-  margin: 0px 0 25px 15px;
-}
+
 .fonts-title-lancaments{
   color: #000000;
   font-family: Inter;
@@ -300,11 +298,7 @@ h4{
   display: flex;
   font-size: 14px;  
   font-style: normal;
-  margin:0 0 0 15px;
-}
-
-.titulo-destaques{
-  margin:190px 0 0 45px;
+  margin:0;
 }
 
 .itens-box {
@@ -321,6 +315,7 @@ h4{
 }
 
 .highlights{
+  order: 1;
   cursor: grab;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -329,10 +324,11 @@ h4{
   height: 10.4rem;
   display: flex;
   background-color: rgba(79, 1, 1, 1) ;
-  position:absolute;
+  position:relative;
   justify-content: flex-start;
   align-items: center;
   bottom: 0;
+  margin: 45px 0 0 0px ;
   padding: 7px 0;
 }
 .highlights.active {
@@ -346,23 +342,24 @@ h4{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 145%;
+  left: 68%;
   z-index: 10;
-  width: calc(50% - 10px);
+  width: calc(20% - 10px);
   justify-content:flex-end;
   display: flex;
   padding: 7px;
   flex-wrap:wrap;
   flex-direction: row;
-  order: 2 ;  
+  order: 3 ;  
   align-items: center;
 }
 .maisVistos {
   display: flex;
   justify-content:flex-end;
   flex-direction: row;
+  position: relative;
   flex-wrap: wrap;
-  margin:110px 0px;
+  margin:60px 0;
   gap: 10px; /* Espaço entre as caixas */
 }
 .itens-box3 {  
@@ -380,10 +377,11 @@ h4{
 }
 .titulo-maisVistos {
   position: absolute; 
-  top: 75px; 
+  top: 30px; 
+  margin: 0;
 }
 .traco-title-maisVistos{
-  margin: 0px 0 25px 15px;
+  margin: 0px 0 20px 15px;
 }
 .fonts-title-maisVistos{
   color: #000000;
