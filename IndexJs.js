@@ -14,7 +14,7 @@ document.querySelector('.ball').addEventListener('click', (e)=>{
   e.target.classList.toggle('ball-move');
   document.body.classList.toggle('dark');
 
-  const elementsToChange = document.querySelectorAll('h3, p, h4, .titulos, div');
+  const elementsToChange = document.querySelectorAll('h3, h4, div');
   
   elementsToChange.forEach(element => {
       if (element.style.color === 'black' || element.style.color === '') {
