@@ -257,8 +257,8 @@ select {
   display: block;
   justify-content: space-around;
   margin: 0px 20px 15px 0px;
-  width: 160px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   background-color: rgb(217, 217, 217);
   align-items: center;
   border-radius: 10px;
@@ -266,7 +266,7 @@ select {
 }
 
 .episodios-recentes {
-  width: calc(70% - 10px);
+  width: calc(100% - 10px);
   height: 10rem;
   display: flex;
   position: relative;
@@ -317,8 +317,8 @@ h4 {
 }
 
 #arrastavel {
-  position: absolute;
-  cursor: pointer;
+  position: relative;
+  width: 250%;
 }
 
 .highlights {
@@ -415,7 +415,7 @@ h4 {
     min-height: 145px;
   }
   .episodios-recentes {
-    width: 80%;
+    width: 90%;
   }
   .container-episodios {
     margin: 70px 45px;
@@ -424,12 +424,14 @@ h4 {
     margin: 80px 0 0 45px;
   }
   .itens-box2 {
-    width: 140px;
+    width: 190px;
+    height: 120px;
   }
   .itens-box3 {
     align-items: center;
     align-content: center;
     width: 95px;
+    right: 35px;
     margin: auto;
     flex-wrap: wrap;
   }
