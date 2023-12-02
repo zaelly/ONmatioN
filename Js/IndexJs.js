@@ -15,25 +15,35 @@ document.querySelector('.ball').addEventListener('click', (e)=>{
   document.body.classList.toggle('dark');
 
   const elementsToChange = document.querySelectorAll('h3, h4, div');
+
+  const modoDark = document.body.classList.contains('dark');
+  localStorage.setItem('darkMode', modoDark);
   
   elementsToChange.forEach(element => {
-      if (element.style.color === 'black' || element.style.color === '') {
-          element.style.color = 'white';
+      if (modoDark) {
+        element.style.color = 'white';
       } else {
-          element.style.color = 'black';
+        element.style.color = 'black';
       }
+    });
   });
 
-//   const changeUnder = document.querySelector('Tracos');
+  document.addEventListener('DOMContentLoaded', function () {
+    const salvarDarkMode = localStorage.getItem('darkMode');
+  
+    if (salvarDarkMode === 'true') {
+      document.body.classList.add('dark');
+  
+      const elementsToChange = document.querySelectorAll('h3, h4, div');
+      elementsToChange.forEach(element => {
+        element.style.color = 'white';
+      });
+  
+      document.querySelector('.ball').classList.add('ball-move');
+    }
 
-//   changeUnder.forEach(e => {
-//     if(e.style.backgroundColor === "black" || e.style.backgroundColor === ""){
-//         e.style.backgroundColor = "white";
-//     } else{
-//         e.style.backgroundColor = "black";
-//     }
-//   });
-})
+//fazer com que o traço quando o fundo estiver branco seja preto e quando estiver preto seja esta cor "rgb(0, 221, 255)"
+});
 
 const arrastavel = document.getElementById('arrastavel');
 let isMouseDown = false;
@@ -57,5 +67,4 @@ arrastavel.addEventListener('mousemove', (e) => {
   arrastavel.scrollLeft = scrollLeft - walk;
 });
 
-  
 
