@@ -11,12 +11,24 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px; /* largura do scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 221, 255);
+  border-radius: 6px;
+}
+
 body {
   display: flex;
   font-family: inter;
+  flex-direction: column;
   max-width: 100vh;
   background-color: #ffffff;
   transition: background 1s;
+  margin: 0;
+  overflow: hidden;
 }
 
 header {
@@ -26,6 +38,7 @@ header {
   position: fixed;
   top: 0;
   padding: 7px 0;
+  z-index: 1000;
 }
 
 div {
@@ -40,7 +53,7 @@ ul {
   position: absolute;
   display: flex;
   align-content: flex-start;
-  gap: 200px;
+  gap: 140px;
   width: 100%;
 }
 
@@ -77,13 +90,12 @@ ul {
   width: 35px;
   height: 35px;
   filter: invert(100%);
-  box-shadow: #ffffff;
 }
 
 .logo-text {
   display: block;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(0, 221, 255);
 }
 
 .font-header {
@@ -112,6 +124,20 @@ ul {
   border-color: rgb(0, 221, 255);
   border-radius: 5rem;
   background: rgba(255, 254, 254, 0.3);
+}
+
+select {
+  /* Estilização da seta */
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* Outras propriedades de estilo */
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
 }
 
 .btn-search {
@@ -180,6 +206,29 @@ ul {
   transition: color 1s;
 }
 
+.alfabeto {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  border: black solid 1px;
+  margin: 0px 0 20px 0;
+  padding: 0;
+  align-items: center;
+  border-color: none;
+}
+
+.generos {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  border: black solid 1px;
+  margin: 0px 0 20px 0;
+  padding: 0;
+  align-content: center;
+  align-items: center;
+  border-color: none;
+}
+
 .traco-title-eps {
   margin: 0 0 20px 0px;
 }
@@ -239,7 +288,7 @@ h4 {
 .container-episodios {
   width: 100%;
   max-width: 70rem;
-  margin: 30px 40px;
+  margin: 70px 40px;
   padding: 0;
   position: relative;
   order: 12;
@@ -258,11 +307,23 @@ h4 {
   flex: 0 0 auto;
 }
 
+.highlights.arrastavel {
+  overflow: hidden;
+}
+
+.highlights.arrastavel div {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+#arrastavel {
+  position: absolute;
+  cursor: pointer;
+}
+
 .highlights {
   box-sizing: border-box;
   order: 1;
-  cursor: grab;
-  overflow-x: auto;
   width: 100%;
   display: flex;
   background-color: rgb(0, 0, 0);
@@ -272,12 +333,14 @@ h4 {
   bottom: 0;
   margin: 45px 0 0 0px;
   padding: 7px 0;
+  overflow: hidden;
+  display: flex;
 }
 
 .container-maisVistos {
   position: absolute;
   top: 0;
-  margin: 0;
+  margin: 50px 20px;
   bottom: 0;
   left: 95%;
   z-index: 10;
@@ -297,7 +360,7 @@ h4 {
   flex-direction: row;
   position: relative;
   flex-wrap: wrap;
-  margin: 60px 0;
+  margin: 60px 0 0 0;
   gap: 10px; /* Espaço entre as caixas */
 }
 
@@ -306,7 +369,7 @@ h4 {
   position: relative;
   width: 110px;
   height: 135px;
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(217, 217, 217);
   border-radius: 5px;
   box-shadow: 1px solid #000000;
   justify-content: space-around;
@@ -345,14 +408,14 @@ h4 {
     margin: 220px 0 0 45px;
   }
   .container {
-    gap: 9rem;
+    gap: 6rem;
   }
   .itens-box {
     min-width: 110px;
     min-height: 145px;
   }
   .episodios-recentes {
-    width: 140%;
+    width: 80%;
   }
   .container-episodios {
     margin: 70px 45px;
@@ -363,8 +426,11 @@ h4 {
   .itens-box2 {
     width: 140px;
   }
-}
-#arrastavel {
-  position: absolute;
-  cursor: pointer;
+  .itens-box3 {
+    align-items: center;
+    align-content: center;
+    width: 95px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=style.css.map */

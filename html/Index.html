@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script defer src="IndexJs.js"></script>
+    <script defer src="Js/IndexJs.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -21,58 +21,53 @@
                 <div class="logo"><img src="/src/invader-solid.png" alt="logo">
                     <a class="logo-text" href="Index.html">ONmatioN</a>
                 </div>
-                <div class="dropdown-alphabet dropdown-all">
-                    <ul>
-                        <a class="dropdown-toggle font-header" data-toggle="dropdown">a-z</a>
-                        <!-- <li class="nav-item dropdown">
-                            <div class="dropdown-menu">
-                                <li><a href="Lista-A">A</a></li>
-                                <li><a href="Lista-B">B</a></li>
-                                <li><a href="Lista-C">C</a></li>
-                                <li><a href="Lista-D">D</a></li>
-                                <li><a href="Lista-E">E</a></li>
-                                <li><a href="Lista-F">F</a></li>
-                                <li><a href="Lista-G">G</a></li>
-                                <li><a href="Lista-H">H</a></li>
-                                <li><a href="Lista-I">I</a></li>
-                                <li><a href="Lista-J">J</a></li>
-                                <li><a href="Lista-K">K</a></li>
-                                <li><a href="Lista-L">L</a></li>
-                                <li><a href="Lista-M">M</a></li>
-                                <li><a href="Lista-N">N</a></li>
-                                <li><a href="Lista-O">O</a></li>
-                                <li><a href="Lista-P">P</a></li>
-                                <li><a href="Lista-Q">Q</a></li>
-                                <li><a href="Lista-R">R</a></li>
-                                <li><a href="Lista-S">S</a></li>
-                                <li><a href="Lista-T">T</a></li>
-                                <li><a href="Lista-U">U</a></li>
-                                <li><a href="Lista-V">V</a></li>
-                                <li><a href="Lista-W">W</a></li>
-                                <li><a href="Lista-X">X</a></li>
-                                <li><a href="Lista-Y">Y</a></li>
-                                <li><a href="Lista-Z">Z</a></li>
-                                </div>
-                            </li>                               -->
-                    </ul>
-                </div>
-                    <div class="dropdown-gender dropdown-all"> 
-                        <ul>   
-                            <a href="#" class="dropdown-toggle font-header" data-toggle="dropdown">gênero</a>
-                        <!-- <ul class="dropdown-menu">
-                                <li><a   href="Lista-A">Ação</a></li>
-                                <li><a   href="Lista-A">Aventura</a></li>
-                                <li><a   href="Lista-A">Comédia</a></li>
-                                <li><a   href="Lista-A">Drama</a></li>
-                                <li><a   href="Lista-A">Mistério</a></li>
-                                <li><a   href="Lista-A">Romance</a></li>
-                                <li><a   href="Lista-A">Sci-Fi</a></li>
-                                <li><a   href="Lista-A">Terror</a></li>
-                                <li><a   href="Lista-A">Shounen</a></li>
-                                <li><a   href="Lista-A">Shojou</a></li>
-                            </ul> -->
-                        </ul>
-                    </div>
+                <section id="alfabeto" class="font-header"></section>
+                    <select class="alfabeto">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                        <option value="k">K</option>
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="n">N</option>
+                        <option value="o">O</option>
+                        <option value="p">P</option>
+                        <option value="q">Q</option>
+                        <option value="r">R</option>
+                        <option value="s">S</option>
+                        <option value="t">T</option>
+                        <option value="u">U</option>
+                        <option value="v">V</option>
+                        <option value="w">W</option>
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Z</option>
+                    </select>
+                </section>
+                    <section id="generos" class="font-header"></section>
+                        <select class="generos">
+                            <optgroup label="Selecione uma opção" disabled><option selected hidden>Gêneros</option>
+                            </optgroup>
+                            <!-- estilizar as labels dentro do option -->
+                            <option value="acao">Ação</option>
+                            <option value="aventura">Aventura</option>
+                            <option value="comedia">Comédia</option>
+                            <option value="drama">Drama</option>
+                            <option value="misterio">Mistério</option>
+                            <option value="romance">Romance</option>
+                            <option value="sciFi">Sci-Fi</option>
+                            <option value="terror">Terror</option>
+                            <option value="shounen">Shounen</option>
+                            <option value="shojou">Shojou</option>
+                        </select>
+                    </section>
                             <form>
                             <input class="search" type="search" placeholder="buscar" aria-label="Search">
                             <button class="btn-search search-icon" type="submit"></button>
@@ -88,7 +83,7 @@
             </div>
             </header>
         <main>
-            <div class="highlights">
+            <div id= "arrastavel" class="highlights">
                 <div>
                     <a class="itens-box" href=""></a>
                 </div>
@@ -135,7 +130,7 @@
                             <h3 class="fonts-title-maisVistos">Mais vistos</h3>
                             <a class="traco-title-maisVistos Tracos"></a>
                         </div>
-        
+        <!-- alinhar conteiner na versao do menor monitor -->
                         <div class="maisVistos">
                             <div class="itens-box3"></div>
                             <div class="itens-box3"></div>
@@ -187,7 +182,6 @@
                 </div>
             </div>
             </div>
-
         </main>
     <footer>
     </footer>  
