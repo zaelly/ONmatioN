@@ -67,4 +67,13 @@ arrastavel.addEventListener('mousemove', (e) => {
   arrastavel.scrollLeft = scrollLeft - walk;
 });
 
+//pegando dados da api
 
+// function pegaEpisodios() {
+//   const jikanjs = require();
+// }
+
+fetch ('@mateoaranda/jikanjs')
+.then((res) =>{
+  console.log(res);
+})
